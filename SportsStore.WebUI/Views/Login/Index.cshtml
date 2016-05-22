@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/LayoutLogin.cshtml";
+}
+
+<html>
+<head>
+
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>RsvpForm</title>
+    <link href="~/Content/Style.css" rel="stylesheet" />
+    <script src="~/scripts/jquery-1.10.2.min.js"></script>
+
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">Acesso</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="form-group col-xs-12 col-lg-offset-4">
+                        <label> Usuário </label>
+                        <div class="input-group">
+                            <input type="text" id="txtUsuario" name="txtUsuario" placeholder="Ex: João da Silva" />
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                </div>
+                <div class="row">      
+                        <div class="form-group col-xs-12 col-lg-offset-4">
+                            <label> Senha </label> <br />
+                            <input type="text" id="txtSenha" name="txtSenha" placeholder="" />
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-xs-4 col-lg-offset-5">
+                        <input class="btn btn-success " value="Entrar" id="btnEntrar" type="submit" />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    }
+
+
+</body>
+</html>
+
